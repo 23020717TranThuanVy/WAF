@@ -1,0 +1,6 @@
+﻿Nginx runtime configuration excerpts
+Source: docker compose exec -T waf nginx -T
+
+proxy_pass http://web:3000;
+modsecurity on;
+modsecurity_rules_file /etc/modsecurity.d/setup.conf;

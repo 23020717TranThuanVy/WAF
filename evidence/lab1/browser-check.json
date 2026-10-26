@@ -1,0 +1,31 @@
+{
+  "captured_at_utc": "2026-10-26T16:56:57.065641+00:00",
+  "capture_method": "Headless Chrome page screenshots; separate HTTP API check",
+  "screenshots": {
+    "web": {
+      "file": "web-browser.png",
+      "present": true,
+      "bytes": 312334
+    },
+    "waf": {
+      "file": "waf-browser.png",
+      "present": true,
+      "bytes": 25110
+    }
+  },
+  "product_api_checks": [
+    {
+      "path": "backend",
+      "url": "http://localhost:3000/rest/products/search?q=",
+      "http_status": 200,
+      "product_count": 46
+    },
+    {
+      "path": "waf",
+      "url": "http://localhost:8080/rest/products/search?q=",
+      "http_status": 200,
+      "product_count": 46
+    }
+  ],
+  "note": "The WAF screenshot captured the page shell before product cards appeared; the direct API check confirms the product endpoint response separately."
+}

@@ -1,0 +1,9 @@
+﻿{
+    "captured_at":  "2026-10-26T23:56:56+07:00",
+    "method":  "Chrome headless screenshot",
+    "web_url":  "http://localhost:3000",
+    "web_screenshot":  "web-browser.png",
+    "waf_url":  "http://localhost:8080",
+    "waf_screenshot":  "waf-browser.png",
+    "note":  "WAF image shows the page shell before product cards render; browser-check.json includes separate successful product API checks."
+}

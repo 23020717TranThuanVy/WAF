@@ -1,0 +1,10 @@
+﻿Docker Compose service status
+Captured: 2026-10-26 23:50:07 +07:00
+
+NAME        IMAGE                         COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+waf-waf-1   owasp/modsecurity-crs:nginx   "/docker-entrypoint.…"   waf       30 minutes ago   Up 30 minutes (healthy)   0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp
+waf-web-1   bkimminich/juice-shop         "/nodejs/bin/node /j…"   web       30 minutes ago   Up 30 minutes             0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+
+HTTP check
+http://localhost:3000 -> 200
+http://localhost:8080 -> 200

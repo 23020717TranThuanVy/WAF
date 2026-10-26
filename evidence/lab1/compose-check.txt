@@ -1,0 +1,8 @@
+﻿Docker Compose validation:
+
+Compose services:
+web
+waf
+
+Docker Compose version:
+Docker Compose version v5.5.1

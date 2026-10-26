@@ -1,0 +1,57 @@
+{
+  "captured_at_utc": "2026-10-26T16:54:49.284447+00:00",
+  "backend": [
+    {
+      "path": "styles.css",
+      "http_status": 200,
+      "content_type": "text/css; charset=UTF-8"
+    },
+    {
+      "path": "styles.css",
+      "http_status": 200,
+      "content_type": "text/css; charset=UTF-8"
+    },
+    {
+      "path": "polyfills.js",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=UTF-8"
+    },
+    {
+      "path": "scripts.js",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=UTF-8"
+    },
+    {
+      "path": "main.js",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=UTF-8"
+    }
+  ],
+  "waf": [
+    {
+      "path": "styles.css",
+      "http_status": 200,
+      "content_type": "text/css; charset=UTF-8"
+    },
+    {
+      "path": "styles.css",
+      "http_status": 200,
+      "content_type": "text/css; charset=UTF-8"
+    },
+    {
+      "path": "polyfills.js",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=UTF-8"
+    },
+    {
+      "path": "scripts.js",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=UTF-8"
+    },
+    {
+      "path": "main.js",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=UTF-8"
+    }
+  ]
+}
