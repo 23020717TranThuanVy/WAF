@@ -1,0 +1,7 @@
+﻿OWASP CRS detection evidence
+rule_id: 942100
+message: SQL Injection Attack Detected via libinjection
+uri: /rest/user/login
+matched_argument: ARGS:json.email
+payload_pattern: ' OR 1=1--
+result: blocked with HTTP 403 through localhost:8080

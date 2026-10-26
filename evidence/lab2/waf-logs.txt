@@ -1,0 +1,8 @@
+﻿TRICH LOG WAF THUC — OWASP CRS rule 942100
+Nguồn: docker compose logs --no-color --since 24h waf
+Các trường được trích từ audit log gốc; header, cookie và token đã loại bỏ.
+timestamp | method | uri | http_status | rule_id | message | source_file:line | unique_id
+Mon Oct 26 16:38:48 2026 | POST | /rest/user/login | 403 | 942100 | SQL Injection Attack Detected via libinjection | /etc/modsecurity.d/owasp-crs/rules/REQUEST-942-APPLICATION-ATTACK-SQLI.conf:46 | 179303272837.538298
+Mon Oct 26 16:40:13 2026 | POST | /rest/user/login | 403 | 942100 | SQL Injection Attack Detected via libinjection | /etc/modsecurity.d/owasp-crs/rules/REQUEST-942-APPLICATION-ATTACK-SQLI.conf:46 | 179303281391.213560
+Mon Oct 26 17:02:48 2026 | POST | /rest/user/login | 403 | 942100 | SQL Injection Attack Detected via libinjection | /etc/modsecurity.d/owasp-crs/rules/REQUEST-942-APPLICATION-ATTACK-SQLI.conf:46 | 179303416845.221274
+Mon Oct 26 17:40:48 2026 | POST | /rest/user/login | 403 | 942100 | SQL Injection Attack Detected via libinjection | /etc/modsecurity.d/owasp-crs/rules/REQUEST-942-APPLICATION-ATTACK-SQLI.conf:46 | 179303644831.972322
