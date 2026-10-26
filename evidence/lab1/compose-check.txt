@@ -1,8 +1,18 @@
-﻿Docker Compose validation:
+﻿BẰNG CHỨNG KIỂM TRA DOCKER COMPOSE — LAB 1
+Thời điểm: 2026-10-27 00:25:12 +07:00
 
-Compose services:
-web
+Lệnh: docker compose config --quiet
+Kết quả: ĐẠT (cấu hình hợp lệ)
+
+Service được khai báo:
 waf
+web
 
-Docker Compose version:
 Docker Compose version v5.5.1
+
+Các giá trị theo đề:
+web: bkimminich/juice-shop, cổng 3000:3000
+waf: owasp/modsecurity-crs:nginx, cổng 8080:8080
+BACKEND: http://web:3000
+MODSEC_RULE_ENGINE: On
+BLOCKING_PARANOIA: 1

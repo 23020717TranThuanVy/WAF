@@ -1,6 +1,17 @@
-﻿Nginx runtime configuration excerpts
-Source: docker compose exec -T waf nginx -T
+﻿BẰNG CHỨNG CẤU HÌNH ĐANG CHẠY — LAB 1
+Nguồn: docker compose exec waf nginx -T; /etc/modsecurity.d/setup.conf
 
+Nginx:
 proxy_pass http://web:3000;
 modsecurity on;
 modsecurity_rules_file /etc/modsecurity.d/setup.conf;
+
+ModSecurity/CRS:
+SecRuleEngine On
+Include /etc/modsecurity.d/owasp-crs/crs-setup.conf
+Include /etc/modsecurity.d/owasp-crs/rules/*.conf
+
+Compose:
+BACKEND=http://web:3000
+MODSEC_RULE_ENGINE=On
+BLOCKING_PARANOIA=1
